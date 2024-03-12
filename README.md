@@ -58,9 +58,9 @@ This MATLAB script helps you separate wave and turbulence motions from raw flow 
 4. **Run DMD:** Decompose the time-delayed matrix using DMD and reconstruct the time series in time domain.
 
 ## Custom functions
-**HankelMatrix.m:** Constructs Hankel matrix
-**DMD_processing.m:** Processes raw signal and performs DMD
-**DMD_spectrum.m:** Computes DMD spectrum
-**find_in_range.m:** Finds indexes within a specified range
-**DMD_reconstruct.m:** Reconstructs signals using DMD
-**eigvals_lambda_omega.m:** Extracts components from eigenvalues for visualization
+- **HankelMatrix.m:** Constructs Hankel matrix
+- **DMD_processing.m:** Processes raw signal and performs DMD
+- **DMD_spectrum.m:** Computes DMD spectrum
+- **find_in_range.m:** Finds indexes within a specified range
+- **DMD_reconstruct.m:** Reconstructs signals using DMD
+- **eigvals_lambda_omega.m:** Extracts components from eigenvalues for visualization
