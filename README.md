@@ -45,10 +45,10 @@ This MATLAB script helps you separate wave and turbulence motions from raw flow 
 - **Raw Data:** Load your flow measurement data.
 - **Sampling Frequency (fs):** Specify the frequency at which measurements were taken.
 - **Wave Frequency Range:** Define the range of frequencies where waves are expected in a power density spectra of the raw data.
-- **Spectral Parameters:** Set the number of FFT points (nfft) and window size (win) for spectral visualization.
+- **Spectral Parameters:** Set the number of FFT points (``nfft``) and window size (``win``) for spectral visualization.
 
 ## Output:
-- **Out:** Structure that contains the outputs from DMD analysis such as the eigen modes (Phi), discrete and continuous eigenvalues (lambda and omega), amplitudes (b), and DMD separation of the raw data (Xdmd).
+- **Out:** Structure that contains the outputs from DMD analysis such as the eigen modes (``Out.Phi``), discrete and continuous eigenvalues (``Out.lambda`` and ``Out.omega``), amplitudes (``Out.b``), and DMD separation of the raw data (``Out.Xdmd``).
 
 ## How to use:
 
@@ -58,9 +58,9 @@ This MATLAB script helps you separate wave and turbulence motions from raw flow 
 4. **Run DMD:** Decompose the time-delayed matrix using DMD and reconstruct the time series in time domain.
 
 ## Custom functions
-- **HankelMatrix.m:** Constructs Hankel matrix
-- **DMD_processing.m:** Processes raw signal and performs DMD
-- **DMD_spectrum.m:** Computes DMD spectrum
-- **find_in_range.m:** Finds indexes within a specified range
-- **DMD_reconstruct.m:** Reconstructs signals using DMD
-- **eigvals_lambda_omega.m:** Extracts components from eigenvalues for visualization
+- **``HankelMatrix.m``:** Constructs Hankel matrix
+- **``DMD_processing.m``:** Processes raw signal and performs DMD
+- **``DMD_spectrum.m``:** Computes DMD spectrum
+- **``find_in_range.m``:** Finds indexes within a specified range
+- **``DMD_reconstruct.m``:** Reconstructs signals using DMD
+- **``eigvals_lambda_omega.m``:** Extracts components from eigenvalues for visualization
